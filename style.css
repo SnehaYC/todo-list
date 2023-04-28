@@ -4,14 +4,78 @@
 
 :root {
   --primary-color: #7e22ce;
+  --primary-font-family: "Kanit";
 }
 header {
   background-color: var(--primary-color);
   color: aliceblue;
-  font-family: "Kanit";
   padding: 10px;
   border-bottom-left-radius: 1rem;
   border-top-right-radius: 1rem;
   font-size: 1rem;
+  font-family: var(--primary-font-family);
   text-align: center;
+}
+.Img-container {
+  width: 650px;
+  max-width: 100%;
+  margin: auto;
+  border-radius: 8px;
+  padding-left: 12rem;
+  padding-top: 10rem;
+}
+section {
+  margin-bottom: 25px;
+  font-family: var(--primary-font-family);
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="date"] {
+  padding: 10px;
+  width: 99%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button[type="submit"] {
+  padding: 10px;
+  font-family: var(--primary-font-family);
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0.2rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 10px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+li button.delete {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
 }
